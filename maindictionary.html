@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/494e1ade3c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/494e1ade3c.css" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="row justify-content-center align-items-center" style="height: 98vh;">
+        <div class=" col-10 col-sm-8 col-md-6 col-lg-5 col-xl-4" style="background-color: rgb(244, 246, 246); ">
+            <div class="row" style="height:30px; background-color: rgb(252, 4, 116) ;">
+
+                <p style="text-align:center;color: #fff;">ترجمه</p>
+            </div>
+            <div id="click" class=" rounded-3"
+                style="height: 70px; background-color: rgb(191, 221, 248);margin-top: 15px; margin-bottom: 15px;">
+                <div style="text-align: right; justify-content: center;padding-right: 15px;">متن انگلیسی</div>
+            </div>
+            <!-- <form class=" rounded-3" style="height: 70px; background-color: rgb(223, 238, 251);margin-top: 15px;">
+                <input class="" type="text" style="all: unset;height: 65px;width: 300px;padding: 0px 15px;font-size: xx-large;" >
+            </form> -->
+            <div id="noClick" class="rounded-3"
+                style="height: 70px; background-color: rgb(191, 221, 248);display: none;margin-top: 15px;margin-bottom: 15px;">
+                <button class="" style="all: unset; height: 60px ;padding: 0px 15px; margin-left: 10px;">go</button>
+                <input id="inputa" type="text" style="all: unset;height: 60px;width: 300px;font-size: x-large;">
+            </div>
+            <div id="divDef" class=" rounded-3"
+                style="height: 70px; background-color: rgb(191, 221, 248);margin-top: 15px; margin-bottom: 15px;display: none;">
+                <div class="d-flex" style="justify-content: space-between;">
+
+                    <button id="b" style="all: unset; padding-left: 15px;">more</button>
+                    <p id="aA" style="padding-right: 15px;">a</p>
+                </div>
+                <div class="d-flex" style="justify-content: space-between;">
+                    <audio src=""></audio>
+                    <button id="sound" style="all: unset;padding-left: 15px; ">
+                        
+                        <img style="padding-bottom:10px ;"
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAZxJREFUSEvllotRw0AMRJVOoBOoBKgEqASoBDqBTiDP4/WshS74YpwMw80wxJ+7p93TSd7FmcbuTNz40+CLiPgw5/J1aeoaxVcR8Tqueh0Rb+Pv94h4jIjnQ9t4DBhFT3sQYA1AD+PF5/ifQO6SG9OEXrCrdEEOJqjb8SFbgBu+FcOjpeBKJYqk2sGsi/qbvd3MK5VXYF7mT0NQXRM9FrKgbM1gwe/HSd+eZzCR6uUqN4BhnUYFxmoCY5B8cuXSLXdwa/9YwFV6QBWYe8py3CLLGTPVDna1ropJOirZhRaYQFHI8GSbeC3w0qRrgQFKNRkOnDHZfQpwWWi2BFdFhaQbKtqWYEHKBDs1eKrpW4KVSJ5cP2b12uPEPqqI6Dj5EZvtse9FPq9MetnfVAc6VLm6C0iur1XJRAnZqm5TnWPKpBzzkjmrDUubBPVbjcPV/1qTqFRyDyhJ4g0E9eq7uft4QuXGMjCW
+                            lkYFJLi3zdwA3N5ZQrmqXnBLfevTJ5+OiX0MuFKfP/b0odDaum6rmwv1PlijuJc1e///gb8Ay3iNHxadPBkAAAAASUVORK5CYII=" />
+                    </button>
+                    <p id="def" style="padding-right: 15px;">c</p>
+                </div>
+            </div>
+            <div id="bgg" class="" style="justify-content: space-around; display: none;">
+                <div id="one" style="cursor: pointer; ">تلفظ</div>
+                <div id="two" style="cursor: pointer;">عبارت</div>
+                <div id="three" style="cursor: pointer;">مثال</div>
+                <div id="four" style="cursor: pointer;">تعریف</div>
+                <div id="five" style="cursor: pointer;">ترجمه</div>
+            </div>
+            <div id="mtone"
+                style="display: none ;height: 70px; background-color: rgb(191, 221, 248);display: none;margin-top: 15px;margin-bottom: 15px;padding: 10px 0px 10px 20px; ">
+            </div>
+            <div id="mttwo"
+                style="display: none ;height: 70px; background-color: rgb(191, 221, 248);display: none;margin-top: 15px;margin-bottom: 15px;padding: 10px 0px 10px 20px; ">
+            </div>
+            <div id="mtthree"
+                style="display: none ;height: 70px; background-color: rgb(191, 221, 248);display: none;margin-top: 15px;margin-bottom: 15px;padding: 10px 0px 10px 20px; ">
+            </div>
+            <div id="mtfour"
+                style="display: none ;height: 70px; background-color: rgb(191, 221, 248);display: none;margin-top: 15px;margin-bottom: 15px;padding: 10px 0px 10px 20px; ">
+            </div>
+            <div id="mtfive"
+                style="display: none ;height: 70px; background-color: rgb(191, 221, 248);display: none;margin-top: 15px;margin-bottom: 15px;padding: 10px 0px 10px 20px; ">
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <script src="changedic.js"></script>
+</body>
+
+</html>
